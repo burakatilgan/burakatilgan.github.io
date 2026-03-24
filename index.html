@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burak Atılgan | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo-icon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo"><img src="logo-icon.png" alt="Burak Atılgan Logo" class="nav-logo-img"></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#education" data-i18n="nav_education">Education</a></li>
+                <li><a href="#contact" class="nav-cta" data-i18n="nav_contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                        <span class="lang-flag">EN</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting" data-i18n="hero_greeting">Hello, I'm</p>
+                <h1 class="hero-name">Burak <span>Atılgan</span></h1>
+                <h2 class="hero-title" data-i18n="hero_title">Software Engineer</h2>
+                <p class="hero-description" data-i18n="hero_desc">Detail-oriented Software Engineer with hands-on experience in developing CRM, ERP, and automation systems. Skilled in backend development, database management, and cross-functional teamwork.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">Get In Touch</a>
+                    <a href="#experience" class="btn btn-outline" data-i18n="hero_work">View My Work</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:atilganburakk@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/atilganburak/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">developer.cs</span>
+                    </div>
+                    <pre class="code-body"><code><span class="keyword">public class</span> <span class="class-name">Developer</span>
+{
+    <span class="keyword">public string</span> Name => <span class="string">"Burak Atılgan"</span>;
+    <span class="keyword">public string</span> Role => <span class="string">"Software Engineer"</span>;
+    <span class="keyword">public string[]</span> Skills => <span class="keyword">new</span>[]
+    {
+        <span class="string">"C#"</span>, <span class="string">".NET"</span>, <span class="string">"SQL"</span>,
+        <span class="string">"Python"</span>, <span class="string">"JavaScript"</span>
+    };
+    <span class="keyword">public bool</span> IsAvailable => <span class="keyword">true</span>;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_p1">I am a detail-oriented <strong>Software Engineer</strong> with hands-on experience in developing <strong>CRM</strong>, <strong>ERP</strong>, and <strong>automation systems</strong> using .NET Framework and C#. I am adept at designing scalable solutions and continuously improving system performance.</p>
+                    <p data-i18n="about_p2">With a background in backend development, database management, and cross-functional teamwork, I bring a comprehensive approach to every project I work on.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label" data-i18n="stat_exp">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="9">0</div>
+                        <div class="stat-label" data-i18n="stat_projects">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label" data-i18n="stat_tech">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label" data-i18n="stat_companies">Companies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3 data-i18n="skills_languages">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 data-i18n="skills_frameworks">Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">.NET Framework</span>
+                        <span class="skill-tag">Entity Framework</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3 data-i18n="skills_tools">Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MS SQL Server</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VMware</span>
+                        <span class="skill-tag">Canias ERP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-i18n="exp_title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-i18n="exp1_role">Software Engineer</h3>
+                            <span class="timeline-company"><i class="fas fa-building"></i> İkon Ambalaj</span>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> <span data-i18n="exp1_date">Mar 2023 – Present</span></span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp1_d1">Designed and developed a multi-module CRM system using C# .NET Framework (sales, production, and inventory modules).</li>
+                            <li data-i18n="exp1_d2">Implemented reporting features for performance tracking and optimized SQL queries for faster responses.</li>
+                            <li data-i18n="exp1_d3">Collaborated with production and sales teams to automate key business workflows.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>C#</span><span>.NET</span><span>SQL</span><span>CRM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-i18n="exp2_role">Software Engineer & IT Specialist</h3>
+                            <span class="timeline-company"><i class="fas fa-building"></i> Namtek Automotive</span>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> <span data-i18n="exp2_date">Feb 2022 – Mar 2023</span></span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp2_d1">Developed custom ERP modules and optimized business processes using Canias ERP TROIA.</li>
+                            <li data-i18n="exp2_d2">Managed IT infrastructure including servers, backups, IP phones, and security systems.</li>
+                            <li data-i18n="exp2_d3">Improved operational efficiency by automating routine maintenance tasks.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>ERP</span><span>TROIA</span><span>IT Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-i18n="exp3_role">Intern Software Engineer</h3>
+                            <span class="timeline-company"><i class="fas fa-building"></i> Oztas Metal Solutions</span>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> <span data-i18n="exp3_date">Nov 2021 – Jan 2022</span></span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp3_d1">Developed Python scripts for server monitoring and automated email notifications for system issues.</li>
+                            <li data-i18n="exp3_d2">Created a warehouse counting app and a static catalog app using Flutter.</li>
+                            <li data-i18n="exp3_d3">Assisted in server maintenance, data backups, and network cabling.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span><span>Flutter</span><span>Server Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+
+            <!--     <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern Computer Engineer</h3>
+                            <span class="timeline-company"><i class="fas fa-building"></i> Eputek Bilisim</span>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Oct 2020</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed customer-specific web applications using Django framework.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Django</span><span>Web Development</span>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-building"></i></div>
+                    <h3 data-i18n="proj1_title">Enterprise Manufacturing Portal</h3>
+                    <p data-i18n="proj1_desc">Full-scale ERP web portal for textile & packaging manufacturing. Manages the entire order-to-shipment lifecycle with 15+ modules: real-time dashboard, production planning with machine scheduling, quality control with GTIN/lot traceability, warehouse & inventory management, shipping with pallet tracking, complaint management, task collaboration, and carbon emission reporting. Features role-based access control, PDF/Excel reporting, and a comprehensive master data system.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET MVC</span><span>SQL Server</span><span>FastReport</span><span>iTextSharp</span><span>Bootstrap</span><span>jQuery</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-cogs"></i></div>
+                    <h3 data-i18n="proj2_title">Manufacturing & Warehouse Management System</h3>
+                    <p data-i18n="proj2_desc">Production management portal for the plastics industry with advanced cutting stock optimization using constraint programming. Covers production workflow, quality control with recipe management, sales, procurement, and shipment logistics. Includes approval-based task management and role-based access control.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET MVC</span><span>SQL Server</span><span>Google OR-Tools</span><span>FastReport</span><span>ADO.NET</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-file-import"></i></div>
+                    <h3 data-i18n="proj3_title">Design-to-Database Integration Service</h3>
+                    <p data-i18n="proj3_desc">Background service that bridges design software with the product database. Automatically processes exported XML files, extracts product metadata and Pantone color specs, generates EAN/GTIN barcodes, tracks revisions, and processes product images with thumbnail generation. Runs continuously with folder monitoring and full error recovery.</p>
+                    <div class="project-tech">
+                        <span>C#</span><span>Windows Service</span><span>SQL Server</span><span>XML</span><span>GDI+</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3 data-i18n="proj4_title">Automated Weekly Product Report Service</h3>
+                    <p data-i18n="proj4_desc">Windows Service that auto-generates and distributes weekly product reports based on GTIN data. Queries the database for new/modified products, creates Excel spreadsheets and styled HTML emails, and delivers them on schedule with smart retry logic.</p>
+                    <div class="project-tech">
+                        <span>C#</span><span>Windows Service</span><span>SQL Server</span><span>OpenXML</span><span>SMTP</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3 data-i18n="proj5_title">CRM-to-ERP Data Sync Service</h3>
+                    <p data-i18n="proj5_desc">Real-time synchronization service that transfers production order details between a CRM (MySQL) and an ERP system (SQL Server). Runs continuously, maps order data including machine assignments and delivery statuses, and auto-deactivates outdated records.</p>
+                    <div class="project-tech">
+                        <span>C#</span><span>Windows Service</span><span>MySQL</span><span>SQL Server</span><span>SSH.NET</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-industry"></i></div>
+                    <h3 data-i18n="proj6_title">ERP Industry 4.0 Integration</h3>
+                    <p data-i18n="proj6_desc">Custom ERP modules for production efficiency reporting and operator performance tracking, bridging traditional ERP with Industry 4.0 concepts. Built using TROIA scripting language within the Canias ERP environment.</p>
+                    <div class="project-tech">
+                        <span>TROIA</span><span>Canias ERP</span><span>Industry 4.0</span><span>SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title" data-i18n="edu_title">Education</h2>
+            <div class="education-card">
+                <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="education-info">
+                    <h3 data-i18n="edu_degree">B.Sc. in Computer Engineering</h3>
+                    <p class="education-school" data-i18n="edu_school">Karabük University</p>
+                    <p class="education-year">2014 – 2022</p>
+                </div>
+            </div>
+          <!--  <div class="additional-info">
+                <div class="info-item">
+                    <i class="fas fa-language"></i>
+                    <div>
+                        <strong>English</strong>
+                        <p>B2 Level</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-car"></i>
+                    <div>
+                        <strong>Driver's License</strong>
+                        <p>Class B</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+            <p class="contact-subtitle" data-i18n="contact_subtitle">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <div class="contact-grid">
+                <a href="mailto:atilganburakk@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3 data-i18n="contact_email">Email</h3>
+                    <p>atilganburakk@gmail.com</p>
+                </a>
+<a href="https://www.linkedin.com/in/atilganburak/" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h3>LinkedIn</h3>
+                    <p>/burakatılgan</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer">&copy; 2026 Burak Atılgan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
