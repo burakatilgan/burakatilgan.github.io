@@ -6,9 +6,9 @@ const translations = {
         nav_experience: "Deneyim",
         nav_projects: "Projeler",
         nav_contact: "İletişim",
-        hero_badge: "Gerçek üretim sahaları için yazılım geliştiriyorum",
+        hero_badge: "Her ölçekte işletme için özel yazılım",
         hero_title: "Yazılım Mühendisi",
-        hero_desc: "5+ yıldır üretim operasyonlarını yazılıma dönüştürüyorum — C#, .NET ve SQL ile geliştirilen, birden fazla üretim tesisinde canlı çalışan MES, ERP ve APS platformları.",
+        hero_desc: "İşletmenizin çalışma şeklini yazılıma dönüştürüyorum — sipariş takibi, planlama, stok, randevu, raporlama. C#, .NET ve SQL ile her gün canlı çalışan ERP, MES ve yönetim sistemleri geliştiren 5+ yıllık tecrübe.",
         hero_work: "Çalışmalarım",
         hero_cta: "İletişime Geç",
         flow_order: "Sipariş",
@@ -17,12 +17,12 @@ const translations = {
         flow_pack: "Paketleme",
         flow_ship: "Sevkiyat",
         chip_trace: "İzlenebilirlik",
-        about_title: 'Üretim sahasından <span class="gradient-text">veritabanına</span>',
-        about_p1: 'C#, .NET ve SQL ile <strong>ERP</strong>, <strong>MES</strong> ve <strong>üretim yönetim</strong> sistemleri geliştiren, 5+ yıl deneyimli bir <strong>Yazılım Mühendisiyim</strong>.',
-        about_p2: "Üretim planlama, barkod izlenebilirliği, depo ve sevkiyat süreçlerini birden fazla endüstriyel tesiste uçtan uca dijitalleştiriyorum; planlama, kalite, lojistik ve depo ekipleriyle omuz omuza çalışıyorum.",
-        focus_trace: "Barkod İzlenebilirliği",
-        focus_wh: "Depo & Sevkiyat",
-        focus_plan: "Üretim Planlama",
+        about_title: 'Günlük iş akışınızdan <span class="gradient-text">çalışan yazılıma</span>',
+        about_p1: 'C#, .NET ve SQL ile <strong>ERP</strong>, <strong>MES</strong> ve <strong>yönetim sistemleri</strong> geliştiren, 5+ yıl deneyimli bir <strong>Yazılım Mühendisiyim</strong> — işletmenin gerçekte nasıl çalıştığına göre şekillenen yazılımlar yapıyorum.',
+        about_p2: "Fabrika, atölye, klinik ya da güzellik merkezi — hangisini işletiyor olursanız olun; planlama, stok, müşteri ve raporlama süreçlerinizi basit ve güvenilir bir yazılıma dönüştürüyorum, her gün kullanan kişilerle yakın çalışarak.",
+        focus_trace: "Özel İşletme Yazılımı",
+        focus_wh: "Stok & Envanter",
+        focus_plan: "Planlama & Zamanlama",
         stat_exp: "Yıl Deneyim",
         stat_factories: "Dijitalleşen Fabrika",
         stat_companies: "Şirket",
@@ -69,7 +69,7 @@ const translations = {
         mini2_desc: "GTIN tabanlı Excel raporları ve HTML e-postaları zamanında üreten, yeniden deneme mekanizmalı Windows Servisi.",
         mini3_title: "CRM-ERP Veri Senkronizasyon Servisi",
         mini3_desc: "Üretim siparişlerini, makine atamalarını ve teslimat durumlarını MySQL ile SQL Server arasında sürekli senkronize eder.",
-        contact_title: 'Sahayı yöneten bir şey <span class="gradient-text">birlikte inşa edelim.</span>',
+        contact_title: 'İşinize tam oturan <span class="gradient-text">bir yazılım yapalım.</span>',
         contact_subtitle: "Yeni fırsatlara, iş birliklerine ya da sadece bir merhabaya açığım.",
         contact_email: "E-posta",
         footer: "&copy; 2026 Burak Atılgan. Tüm hakları saklıdır."
@@ -173,6 +173,25 @@ navLinks.querySelectorAll('a').forEach(link => {
         navLinks.classList.remove('active');
     });
 });
+
+// ===== CLEAN URL (no #hash in the address bar) =====
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+        const id = link.getAttribute('href').slice(1);
+        const target = id && id !== 'hero' ? document.getElementById(id) : null;
+        e.preventDefault();
+        if (target) {
+            target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+        } else {
+            window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+        }
+        history.replaceState(null, '', location.pathname + location.search);
+    });
+});
+
+if (location.hash) {
+    history.replaceState(null, '', location.pathname + location.search);
+}
 
 // ===== REVEAL ON SCROLL =====
 const revealObserver = new IntersectionObserver(entries => {
