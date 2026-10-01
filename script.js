@@ -1,179 +1,164 @@
 // ===== TRANSLATIONS =====
+// English text lives in index.html and is captured on load; only Turkish is defined here.
 const translations = {
-    en: {
-        nav_about: "About",
-        nav_skills: "Skills",
-        nav_experience: "Experience",
-        nav_projects: "Projects",
-        nav_education: "Education",
-        nav_contact: "Contact",
-        hero_greeting: "Hello, I'm",
-        hero_title: "Software Engineer",
-        hero_desc: "Detail-oriented Software Engineer with hands-on experience in developing CRM, ERP, and automation systems. Skilled in backend development, database management, and cross-functional teamwork.",
-        hero_cta: "Get In Touch",
-        hero_work: "View My Work",
-        about_title: "About Me",
-        about_p1: 'I am a detail-oriented <strong>Software Engineer</strong> with hands-on experience in developing <strong>CRM</strong>, <strong>ERP</strong>, and <strong>automation systems</strong> using .NET Framework and C#. I am adept at designing scalable solutions and continuously improving system performance.',
-        about_p2: "With a background in backend development, database management, and cross-functional teamwork, I bring a comprehensive approach to every project I work on.",
-        stat_exp: "Years Experience",
-        stat_projects: "Projects Completed",
-        stat_tech: "Technologies",
-        stat_companies: "Companies",
-        skills_title: "Technical Skills",
-        skills_languages: "Programming Languages",
-        skills_frameworks: "Frameworks",
-        skills_tools: "Tools & Technologies",
-        exp_title: "Professional Experience",
-        exp1_role: "Software Engineer",
-        exp1_date: "Mar 2023 – Present",
-        exp1_d1: "Designed and developed a multi-module CRM system using C# .NET Framework (sales, production, and inventory modules).",
-        exp1_d2: "Implemented reporting features for performance tracking and optimized SQL queries for faster responses.",
-        exp1_d3: "Collaborated with production and sales teams to automate key business workflows.",
-        exp2_role: "Software Engineer & IT Specialist",
-        exp2_date: "Feb 2022 – Mar 2023",
-        exp2_d1: "Developed custom ERP modules and optimized business processes using Canias ERP TROIA.",
-        exp2_d2: "Managed IT infrastructure including servers, backups, IP phones, and security systems.",
-        exp2_d3: "Improved operational efficiency by automating routine maintenance tasks.",
-        exp3_role: "Intern Software Engineer",
-        exp3_date: "Nov 2021 – Jan 2022",
-        exp3_d1: "Developed Python scripts for server monitoring and automated email notifications for system issues.",
-        exp3_d2: "Created a warehouse counting app and a static catalog app using Flutter.",
-        exp3_d3: "Assisted in server maintenance, data backups, and network cabling.",
-        projects_title: "Projects",
-        proj1_title: "Enterprise Manufacturing Portal",
-        proj1_desc: "Full-scale ERP web portal for textile & packaging manufacturing. Manages the entire order-to-shipment lifecycle with 15+ modules: real-time dashboard, production planning with machine scheduling, quality control with GTIN/lot traceability, warehouse & inventory management, shipping with pallet tracking, complaint management, task collaboration, and carbon emission reporting. Features role-based access control, PDF/Excel reporting, and a comprehensive master data system.",
-        proj2_title: "Manufacturing & Warehouse Management System",
-        proj2_desc: "Production management portal for the plastics industry with advanced cutting stock optimization using constraint programming. Covers production workflow, quality control with recipe management, sales, procurement, and shipment logistics. Includes approval-based task management and role-based access control.",
-        proj3_title: "Design-to-Database Integration Service",
-        proj3_desc: "Background service that bridges design software with the product database. Automatically processes exported XML files, extracts product metadata and Pantone color specs, generates EAN/GTIN barcodes, tracks revisions, and processes product images with thumbnail generation. Runs continuously with folder monitoring and full error recovery.",
-        proj4_title: "Automated Weekly Product Report Service",
-        proj4_desc: "Windows Service that auto-generates and distributes weekly product reports based on GTIN data. Queries the database for new/modified products, creates Excel spreadsheets and styled HTML emails, and delivers them on schedule with smart retry logic.",
-        proj5_title: "CRM-to-ERP Data Sync Service",
-        proj5_desc: "Real-time synchronization service that transfers production order details between a CRM (MySQL) and an ERP system (SQL Server). Runs continuously, maps order data including machine assignments and delivery statuses, and auto-deactivates outdated records.",
-        proj6_title: "ERP Industry 4.0 Integration",
-        proj6_desc: "Custom ERP modules for production efficiency reporting and operator performance tracking, bridging traditional ERP with Industry 4.0 concepts. Built using TROIA scripting language within the Canias ERP environment.",
-        edu_title: "Education",
-        edu_degree: "B.Sc. in Computer Engineering",
-        edu_school: "Karabük University",
-        contact_title: "Get In Touch",
-        contact_subtitle: "Feel free to reach out for collaborations or just a friendly hello!",
-        contact_email: "Email",
-        contact_phone: "Phone",
-        footer: "&copy; 2026 Burak Atılgan. All rights reserved."
-    },
     tr: {
         nav_about: "Hakkımda",
-        nav_skills: "Yetenekler",
         nav_experience: "Deneyim",
         nav_projects: "Projeler",
-        nav_education: "Eğitim",
         nav_contact: "İletişim",
-        hero_greeting: "Merhaba, Ben",
+        hero_badge: "Gerçek üretim sahaları için yazılım geliştiriyorum",
         hero_title: "Yazılım Mühendisi",
-        hero_desc: "CRM, ERP ve otomasyon sistemleri üzerine uzmanlaşmış bir Yazılım Mühendisi. Backend mimarisi, veritabanı yönetimi ve departmanlar arası koordinasyonla uçtan uca çözümler üretiyorum.",
-        hero_cta: "İletişime Geç",
+        hero_desc: "5+ yıldır üretim operasyonlarını yazılıma dönüştürüyorum — C#, .NET ve SQL ile geliştirilen, birden fazla üretim tesisinde canlı çalışan MES, ERP ve APS platformları.",
         hero_work: "Çalışmalarım",
-        about_title: "Hakkımda",
-        about_p1: '<strong>Yazılım Mühendisi</strong> olarak .NET Framework ve C# ile <strong>CRM</strong>, <strong>ERP</strong> ve <strong>otomasyon sistemleri</strong> geliştiriyorum. Ölçeklenebilir mimariler tasarlıyor, sistem performansını sürekli iyileştiriyorum.',
-        about_p2: "Backend geliştirme, veritabanı yönetimi ve ekipler arası koordinasyon deneyimimle her projeye bütüncül bir bakış açısı katıyorum.",
+        hero_cta: "İletişime Geç",
+        flow_order: "Sipariş",
+        flow_plan: "Planlama",
+        flow_prod: "Üretim",
+        flow_pack: "Paketleme",
+        flow_ship: "Sevkiyat",
+        chip_trace: "İzlenebilirlik",
+        about_title: 'Üretim sahasından <span class="gradient-text">veritabanına</span>',
+        about_p1: 'C#, .NET ve SQL ile <strong>ERP</strong>, <strong>MES</strong> ve <strong>üretim yönetim</strong> sistemleri geliştiren, 5+ yıl deneyimli bir <strong>Yazılım Mühendisiyim</strong>.',
+        about_p2: "Üretim planlama, barkod izlenebilirliği, depo ve sevkiyat süreçlerini birden fazla endüstriyel tesiste uçtan uca dijitalleştiriyorum; planlama, kalite, lojistik ve depo ekipleriyle omuz omuza çalışıyorum.",
+        focus_trace: "Barkod İzlenebilirliği",
+        focus_wh: "Depo & Sevkiyat",
+        focus_plan: "Üretim Planlama",
         stat_exp: "Yıl Deneyim",
-        stat_projects: "Tamamlanan Proje",
-        stat_tech: "Teknoloji",
+        stat_factories: "Dijitalleşen Fabrika",
         stat_companies: "Şirket",
-        skills_title: "Teknik Yetenekler",
-        skills_languages: "Programlama Dilleri",
-        skills_frameworks: "Framework'ler",
-        skills_tools: "Araçlar & Teknolojiler",
-        exp_title: "Profesyonel Deneyim",
+        stat_tech: "Teknoloji",
+        exp_title: 'Nerelerde <span class="gradient-text">ürettim</span>',
+        now: "Şu an",
         exp1_role: "Yazılım Mühendisi",
         exp1_date: "Mar 2023 – Halen",
-        exp1_d1: "C# .NET Framework ile satış, üretim ve envanter modüllerini kapsayan çok modüllü bir CRM sistemi tasarlayıp geliştirdim.",
-        exp1_d2: "Performans takibine yönelik raporlama özellikleri oluşturdum, SQL sorgularını optimize ederek sistem hızını artırdım.",
-        exp1_d3: "Üretim ve satış ekipleriyle koordineli çalışarak kritik iş süreçlerini otomatikleştirdim.",
+        exp1_d1: "İki ayrı üretim tesisi için yazılım çözümleri geliştirdim: Kemalpaşa (ofset baskı) ve Polikon (BOPP film).",
+        exp1_d2: "Canlı üretim ortamlarında kullanılan MES, ERP ve APS yeteneklerini tasarlayıp hayata geçirdim.",
+        exp1_d3: "Kemalpaşa fabrikası için <strong>Panoptis Portal</strong>'ı geliştirdim — sipariş yönetimi, üretim planlama, iş akışı takibi, depo ve sevkiyat yönetimi.",
+        exp1_d4: "Polikon fabrikası için <strong>PolikonHub</strong>'ı geliştirdim — Google OR-Tools ile üretim planlama ve siparişten sevkiyata uçtan uca üretim akışları.",
+        exp1_d5: "Üretim, dilme, tartım, paletleme ve sevkiyat süreçlerinde barkod izlenebilirliğini uyguladım.",
+        exp1_d6: "Fabrika operasyonlarını dijitalleştirmek için üretim planlama, kalite güvence, lojistik ve depo ekipleriyle yakın çalıştım.",
         exp2_role: "Yazılım Mühendisi & IT Uzmanı",
         exp2_date: "Şub 2022 – Mar 2023",
-        exp2_d1: "Canias ERP üzerinde TROIA diliyle özel modüller geliştirerek iş süreçlerini optimize ettim.",
-        exp2_d2: "Sunucu, yedekleme, IP telefon ve güvenlik sistemlerini kapsayan BT altyapısını yönettim.",
-        exp2_d3: "Rutin bakım süreçlerini otomatikleştirerek operasyonel verimliliği artırdım.",
+        exp2_d1: "Canias ERP ve TROIA ile özel ERP modülleri geliştirip iş süreçlerini optimize ettim.",
+        exp2_d2: "Üretim verimliliği ve operatör verisi raporlaması için bir Endüstri 4.0 entegrasyon çözümü geliştirdim.",
+        exp2_d3: "Sunucu, yedekleme, IP telefon ve güvenlik sistemlerini kapsayan BT altyapısını yönettim.",
+        exp2_d4: "Rutin bakım işlerini otomatikleştirerek operasyonel verimliliği artırdım.",
         exp3_role: "Stajyer Yazılım Mühendisi",
         exp3_date: "Kas 2021 – Oca 2022",
-        exp3_d1: "Sunucu izleme ve sistem arızalarında otomatik e-posta bildirimi sağlayan Python scriptleri geliştirdim.",
-        exp3_d2: "Flutter ile depo sayım uygulaması ve satış ekibine yönelik katalog uygulaması geliştirdim.",
-        exp3_d3: "Sunucu bakımı, veri yedekleme ve ağ altyapısı çalışmalarına katkı sağladım.",
-        projects_title: "Projeler",
-        proj1_title: "Kurumsal Üretim Yönetim Portalı",
-        proj1_desc: "Tekstil ve ambalaj üretimi için kapsamlı ERP web portalı. 15'ten fazla modülle siparişten sevkiyata tüm yaşam döngüsünü yönetir: gerçek zamanlı dashboard, makine planlamalı üretim yönetimi, GTIN/lot izlenebilirliğiyle kalite kontrol, depo ve envanter yönetimi, palet takipli sevkiyat, şikayet yönetimi, görev yönetimi ve karbon emisyon raporlama. Rol tabanlı erişim kontrolü, PDF/Excel raporlama ve kapsamlı master data sistemi içerir.",
-        proj2_title: "Üretim & Depo Yönetim Sistemi",
-        proj2_desc: "Plastik sektörü için kısıt programlama ile gelişmiş kesim optimizasyonu sunan üretim yönetim portalı. Üretim iş akışı, reçete yönetimli kalite kontrol, satış, satın alma ve sevkiyat lojistiğini kapsar. Onay tabanlı görev yönetimi ve rol tabanlı erişim kontrolü içerir.",
-        proj3_title: "Tasarım-Veritabanı Entegrasyon Servisi",
-        proj3_desc: "Tasarım yazılımı ile ürün veritabanı arasında köprü kuran arka plan servisi. XML dosyalarını otomatik işleyerek ürün bilgilerini ve Pantone renk verilerini çıkarır, EAN/GTIN barkod üretir, revizyon takibi yapar ve ürün görsellerini küçük resim olarak işler. Klasör izleme ve otomatik hata kurtarma ile kesintisiz çalışır.",
-        proj4_title: "Otomatik Haftalık Ürün Rapor Servisi",
-        proj4_desc: "GTIN verilerine dayalı haftalık ürün raporlarını otomatik oluşturup dağıtan Windows Servisi. Veritabanından yeni/güncellenen ürünleri sorgular, Excel tabloları ve biçimlendirilmiş HTML e-postalar oluşturur, akıllı yeniden deneme mekanizmasıyla zamanında teslim eder.",
-        proj5_title: "CRM-ERP Veri Senkronizasyon Servisi",
-        proj5_desc: "CRM (MySQL) ile ERP sistemi (SQL Server) arasında üretim sipariş detaylarını aktaran gerçek zamanlı senkronizasyon servisi. Sürekli çalışır, makine atamaları ve teslimat durumları dahil sipariş verilerini eşler, eski kayıtları otomatik devre dışı bırakır.",
-        proj6_title: "ERP Endüstri 4.0 Entegrasyonu",
-        proj6_desc: "Geleneksel ERP'yi Endüstri 4.0 konseptleriyle birleştiren, üretim verimliliği raporlama ve operatör performans takibi için özel ERP modülleri. Canias ERP ortamında TROIA scripting dili kullanılarak geliştirildi.",
-        edu_title: "Eğitim",
-        edu_degree: "Bilgisayar Mühendisliği Lisans",
-        edu_school: "Karabük Üniversitesi",
-        contact_title: "İletişim",
-        contact_subtitle: "Projeleriniz için birlikte çalışmak ister misiniz? Bana ulaşın!",
+        exp3_d1: "Sunucu izleme ve sistem arızalarında otomatik e-posta bildirimi için Python scriptleri geliştirdim.",
+        exp3_d2: "Flutter ile barkodlu depo sayım uygulaması ve statik ürün kataloğu uygulaması geliştirdim.",
+        exp3_d3: "Sunucu bakımı, veri yedekleme ve ağ kablolama çalışmalarına destek verdim.",
+        projects_title: 'Öne çıkan <span class="gradient-text">projeler</span>',
+        proj1_where: "İkon Ambalaj · Polikon Fabrikası",
+        proj1_kind: "MES & APS Platformu",
+        proj1_d1: "BOPP film üretimi için MES ve APS platformu.",
+        proj1_d2: "Google OR-Tools ile otomatik üretim planlama ve makine kapasite optimizasyonu.",
+        proj1_d3: "Sipariş → üretim → dilme → paletleme → sevkiyat; barkod izlenebilirliği ve Netsis ERP entegrasyonu ile.",
+        proj2_where: "İkon Ambalaj · Kemalpaşa Fabrikası",
+        proj2_kind: "MES / ERP Platformu",
+        proj2_d1: "Ofset baskı operasyonları için üretim yönetim platformu.",
+        proj2_d2: "Sipariş yönetimi, üretim planlama, iş akışı takibi, depo ve sevkiyat yönetimi.",
+        proj2_d3: "Fabrika süreçlerini dijitalleştirdi, üretimde gerçek zamanlı görünürlüğü artırdı.",
+        proj3_title: 'ERP Endüstri 4.0 Entegrasyonu <span class="project-kind">TROIA ile</span>',
+        proj3_d1: "Üretim verimliliği ve operatör verilerini raporlayan sistem.",
+        proj3_d2: "Canias ERP ortamında ERP süreçleriyle entegrasyonu destekler.",
+        more_title: "Diğer çalışmalar",
+        mini1_title: "Tasarım-Veritabanı Entegrasyon Servisi",
+        mini1_desc: "Tasarım XML çıktılarını izler; ürün bilgilerini ve Pantone verilerini çıkarır, EAN/GTIN barkod üretir, revizyonları takip eder.",
+        mini2_title: "Otomatik Haftalık Ürün Raporları",
+        mini2_desc: "GTIN tabanlı Excel raporları ve HTML e-postaları zamanında üreten, yeniden deneme mekanizmalı Windows Servisi.",
+        mini3_title: "CRM-ERP Veri Senkronizasyon Servisi",
+        mini3_desc: "Üretim siparişlerini, makine atamalarını ve teslimat durumlarını MySQL ile SQL Server arasında sürekli senkronize eder.",
+        contact_title: 'Sahayı yöneten bir şey <span class="gradient-text">birlikte inşa edelim.</span>',
+        contact_subtitle: "Yeni fırsatlara, iş birliklerine ya da sadece bir merhabaya açığım.",
         contact_email: "E-posta",
-        contact_phone: "Telefon",
         footer: "&copy; 2026 Burak Atılgan. Tüm hakları saklıdır."
     }
 };
 
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+function storageGet(key) {
+    try { return localStorage.getItem(key); } catch { return null; }
+}
+
+function storageSet(key, value) {
+    try { localStorage.setItem(key, value); } catch { /* ignore */ }
+}
+
 // ===== LANGUAGE SWITCHER =====
-let currentLang = localStorage.getItem('lang') || 'en';
+const i18nEls = document.querySelectorAll('[data-i18n]');
+i18nEls.forEach(el => { el.dataset.en = el.innerHTML; });
+
+let currentLang = storageGet('lang') === 'tr' ? 'tr' : 'en';
 
 function setLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('lang', lang);
+    storageSet('lang', lang);
     document.documentElement.lang = lang;
 
-    document.querySelectorAll('[data-i18n]').forEach(el => {
+    i18nEls.forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
-        }
+        const value = lang === 'en' ? el.dataset.en : translations.tr[key];
+        if (value) el.innerHTML = value;
     });
 
     const toggle = document.getElementById('langToggle');
-    if (toggle) {
-        toggle.querySelector('.lang-flag').textContent = lang === 'en' ? 'EN' : 'TR';
-    }
+    toggle.classList.toggle('tr', lang === 'tr');
+    toggle.querySelectorAll('.lang-opt').forEach(opt => {
+        opt.classList.toggle('on', opt.dataset.lang === lang);
+    });
 
     document.title = lang === 'en'
         ? 'Burak Atılgan | Software Engineer'
         : 'Burak Atılgan | Yazılım Mühendisi';
+
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const langToggle = document.getElementById('langToggle');
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
-            setLanguage(currentLang === 'en' ? 'tr' : 'en');
-        });
-    }
-
-    if (currentLang !== 'en') {
-        setLanguage(currentLang);
-    }
+document.getElementById('langToggle').addEventListener('click', () => {
+    setLanguage(currentLang === 'en' ? 'tr' : 'en');
 });
 
-// ===== NAVBAR SCROLL EFFECT =====
+
+setLanguage(currentLang);
+
+// ===== NAVBAR / SCROLL PROGRESS / ACTIVE LINK =====
 const navbar = document.getElementById('navbar');
+const progress = document.getElementById('scrollProgress');
+const sections = document.querySelectorAll('section[id]');
+const timeline = document.getElementById('timeline');
+const timelineFill = document.getElementById('timelineFill');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+function onScroll() {
+    const y = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+
+    navbar.classList.toggle('scrolled', y > 40);
+    progress.style.width = `${max > 0 ? (y / max) * 100 : 0}%`;
+
+    const probe = y + window.innerHeight * 0.35;
+    sections.forEach(section => {
+        const link = document.querySelector(`.nav-links a[href="#${section.id}"]`);
+        if (!link) return;
+        const inView = probe >= section.offsetTop && probe < section.offsetTop + section.offsetHeight;
+        link.classList.toggle('active', inView);
+    });
+
+    if (timeline) {
+        const rect = timeline.getBoundingClientRect();
+        const start = window.innerHeight * 0.6;
+        const ratio = Math.min(Math.max((start - rect.top) / rect.height, 0), 1);
+        timelineFill.style.height = `${ratio * 100}%`;
     }
-});
+}
 
-// ===== MOBILE NAV TOGGLE =====
+window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('resize', onScroll);
+onScroll();
+
+// ===== MOBILE NAV =====
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
@@ -182,7 +167,6 @@ navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Close mobile nav on link click
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navToggle.classList.remove('active');
@@ -190,103 +174,149 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-// ===== ACTIVE NAV LINK ON SCROLL =====
-const sections = document.querySelectorAll('section[id]');
-
-function highlightNav() {
-    const scrollY = window.scrollY + 120;
-
-    sections.forEach(section => {
-        const top = section.offsetTop;
-        const height = section.offsetHeight;
-        const id = section.getAttribute('id');
-        const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-
-        if (link) {
-            if (scrollY >= top && scrollY < top + height) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        }
+// ===== REVEAL ON SCROLL =====
+const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.add('visible');
+        revealObserver.unobserve(el);
+        // Drop the reveal styles afterwards so hover transforms work normally
+        setTimeout(() => {
+            el.classList.remove('reveal');
+            el.style.transitionDelay = '';
+        }, 1300);
     });
-}
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
 
-window.addEventListener('scroll', highlightNav);
-
-// ===== SCROLL REVEAL ANIMATION =====
-function revealOnScroll() {
-    const elements = document.querySelectorAll('.fade-in');
-
-    elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        if (rect.top < windowHeight - 80) {
-            el.classList.add('visible');
-        }
-    });
-}
-
-// Add fade-in class to animatable elements
-document.addEventListener('DOMContentLoaded', () => {
-    const animatables = document.querySelectorAll(
-        '.skill-category, .timeline-item, .project-card, .stat-card, ' +
-        '.education-card, .contact-card, .about-text, .info-item'
-    );
-
-    animatables.forEach((el, i) => {
-        el.classList.add('fade-in');
-        el.style.transitionDelay = `${i % 3 * 0.1}s`;
-    });
-
-    revealOnScroll();
+document.querySelectorAll('.reveal').forEach(el => {
+    const siblings = Array.from(el.parentElement.children).filter(c => c.classList.contains('reveal'));
+    el.style.transitionDelay = `${Math.min(siblings.indexOf(el), 4) * 0.08}s`;
+    revealObserver.observe(el);
 });
 
-window.addEventListener('scroll', revealOnScroll);
+// ===== COUNTERS =====
+const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        counterObserver.unobserve(el);
 
-// ===== COUNTER ANIMATION =====
-function animateCounters() {
-    const counters = document.querySelectorAll('.stat-number');
-
-    counters.forEach(counter => {
-        if (counter.dataset.animated) return;
-
-        const rect = counter.getBoundingClientRect();
-        if (rect.top > window.innerHeight) return;
-
-        counter.dataset.animated = 'true';
-        const target = parseInt(counter.dataset.target);
-        const duration = 1500;
-        const startTime = performance.now();
-
-        function update(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            const current = Math.round(eased * target);
-
-            counter.textContent = current;
-
-            if (progress < 1) {
-                requestAnimationFrame(update);
-            }
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        if (reduceMotion) {
+            el.textContent = target + suffix;
+            return;
         }
 
+        const duration = 1600;
+        const startTime = performance.now();
+        function update(now) {
+            const p = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - p, 4);
+            el.textContent = Math.round(eased * target) + suffix;
+            if (p < 1) requestAnimationFrame(update);
+        }
         requestAnimationFrame(update);
     });
+}, { threshold: 0.6 });
+
+document.querySelectorAll('.stat-number').forEach(el => counterObserver.observe(el));
+
+// ===== POINTER EFFECTS (desktop only) =====
+if (finePointer && !reduceMotion) {
+    const spotlight = document.getElementById('spotlight');
+    window.addEventListener('pointermove', e => {
+        spotlight.style.setProperty('--mx', `${e.clientX}px`);
+        spotlight.style.setProperty('--my', `${e.clientY}px`);
+    }, { passive: true });
+
+    // Border glow follows the cursor
+    document.querySelectorAll('.glow-card').forEach(card => {
+        card.addEventListener('pointermove', e => {
+            const r = card.getBoundingClientRect();
+            card.style.setProperty('--x', `${e.clientX - r.left}px`);
+            card.style.setProperty('--y', `${e.clientY - r.top}px`);
+        });
+    });
+
+    // 3D tilt
+    document.querySelectorAll('.tilt').forEach(card => {
+        const strength = card.classList.contains('ops-card') ? 8 : 4;
+        card.addEventListener('pointermove', e => {
+            const r = card.getBoundingClientRect();
+            const px = (e.clientX - r.left) / r.width - 0.5;
+            const py = (e.clientY - r.top) / r.height - 0.5;
+            card.style.transform = `perspective(1000px) rotateX(${-py * strength}deg) rotateY(${px * strength}deg)`;
+        });
+        card.addEventListener('pointerleave', () => {
+            card.style.transform = '';
+        });
+    });
+
+    // Magnetic buttons
+    document.querySelectorAll('.magnetic').forEach(btn => {
+        btn.addEventListener('pointermove', e => {
+            const r = btn.getBoundingClientRect();
+            const dx = e.clientX - (r.left + r.width / 2);
+            const dy = e.clientY - (r.top + r.height / 2);
+            btn.style.transform = `translate(${dx * 0.18}px, ${dy * 0.25}px)`;
+        });
+        btn.addEventListener('pointerleave', () => {
+            btn.style.transform = '';
+        });
+    });
 }
 
-window.addEventListener('scroll', animateCounters);
-document.addEventListener('DOMContentLoaded', animateCounters);
+// ===== LIVE FLOOR DEMO (hero visual) =====
+(function liveFloor() {
+    const nodes = document.querySelectorAll('.flow-node');
+    const fill = document.getElementById('flowFill');
+    const barcode = document.getElementById('barcode');
+    const scanId = document.getElementById('scanId');
+    const scanStage = document.getElementById('scanStage');
+    if (!nodes.length) return;
 
-// ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+    const stageKeys = ['order', 'planning', 'production', 'packing', 'shipment'];
+
+    function drawBarcode() {
+        barcode.innerHTML = '';
+        for (let i = 0; i < 34; i++) {
+            const bar = document.createElement('span');
+            bar.style.width = `${[1, 1, 2, 3][Math.floor(Math.random() * 4)]}px`;
+            if (Math.random() < 0.2) bar.style.opacity = '0';
+            barcode.appendChild(bar);
         }
-    });
-});
+    }
+
+    const id = 'LOT-151162';
+    let step = 0;
+
+    function render() {
+        nodes.forEach((node, i) => {
+            node.classList.toggle('done', i < step);
+            node.classList.toggle('active', i === step);
+        });
+        fill.style.width = `${(step / (nodes.length - 1)) * 100}%`;
+        scanStage.textContent = stageKeys[step];
+    }
+
+    drawBarcode();
+    scanId.textContent = id;
+
+    if (reduceMotion) {
+        step = nodes.length - 1;
+        render();
+        return;
+    }
+
+    render();
+    setInterval(() => {
+        step++;
+        if (step >= nodes.length) {
+            step = 0;
+            drawBarcode();
+        }
+        render();
+    }, 1600);
+})();
